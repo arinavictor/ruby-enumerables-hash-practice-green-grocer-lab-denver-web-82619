@@ -21,7 +21,7 @@ coupons.each do |coupon|
           cart["#{name} W/COUPON"][:count] += coupon[:num]
         else
           cart["#{name} W/COUPON"] = {:price => coupon[:cost]/coupon[:num],
-          :clearance => cart[name][:clearance], :count => 1}
+          :clearance => cart[name][:clearance], :count[:num]}
         end
 
        cart[name][:count] -= coupon[:num]
